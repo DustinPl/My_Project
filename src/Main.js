@@ -7,13 +7,16 @@ import {
   import Home from "./Home";
   import Stuff from "./Tires";
   import Contact from "./Contact"; 
+  import logo from "./logo.png";
 
 class Main extends Component {
   render() {
     return (
         <HashRouter>
-        <div>
-          <h1>R&J Tire</h1>
+
+        <div>  
+          <div id= "center"><img src={logo} alt="logo" width="900" height="350"></img></div>
+
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/Tires">Tires</NavLink></li>
